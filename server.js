@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 // این دو خط حیاتی هستند:
 app.use(cors());
 app.use(express.json());
+app.use(express.static('.'));
 
 // آرایه ذخیره نظرات در حافظه سرور
 let feedbacks = [

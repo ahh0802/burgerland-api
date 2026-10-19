@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برگرلند | خانه برگرهای ارگانیک</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- هدر سایت -->
+    <header>
+        <h1>🍔 برگرلند</h1>
+        <p>لذت طعم واقعی برگر زغالی و ارگانیک</p>
+    </header>
+
+    <!-- بخش نظرات -->
+    <main class="container">
+        <section class="feedback-section">
+            <h2>ثبت نظر درباره برگرلند</h2>
+            <form id="feedbackForm">
+                <input type="text" id="name" placeholder="نام شما..." required>
+                <input type="number" id="rating" min="1" max="5" placeholder="امتیاز (1 تا 5)..." required>
+                <textarea id="message" placeholder="متن نظر شما..." required></textarea>
+                <button type="submit">ارسال نظر</button>
+            </form>
+            <p id="responseMsg"></p>
+        </section>
+
+        <section class="list-section">
+            <h2>نظرات مشتریان</h2>
+            <div id="feedbacksContainer">در حال بارگذاری نظرات...</div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
