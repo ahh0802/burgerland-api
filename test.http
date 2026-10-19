@@ -1,0 +1,11 @@
+### ثبت نظر جدید
+POST http://localhost:3000/api/feedbacks
+Content-Type: application/json
+
+{
+  "name": "Sara",
+  "rating": 5,
+  "message": "Great burgers"
+}
+### 1. دریافت همه نظرات (GET)
+GET http://localhost:3000/api/feedbacks
